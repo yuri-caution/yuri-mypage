@@ -347,7 +347,7 @@ h2 {
     display: none;
 }
 
-.scroll_area:nth-of-type(1) {
+.scroll_area:nth-of-type(2) {
     display: block;
 }
 
@@ -402,8 +402,8 @@ h2 {
 
 /* illustrator */
 .scroll_area.ai ul li {
-    width: 200px;
-    padding: 48px 0 0 50px;
+    width: 210px;
+    padding: 48px 0 0 55px;
     border: 1px solid #eee;
 }
 
