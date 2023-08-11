@@ -1,19 +1,4 @@
 
-.wrap {
-    width: 100%;
-    /* display: none; */
-}
-
-
-h2 {
-    font-family: 'Noto Sans KR';
-    font-size: 50px;
-    color: #222222;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 70px;
-}
-
 /* section.uiux */
 
 .uiux {
@@ -59,7 +44,6 @@ h2 {
 .brands {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 180px;
 }
 
 .brands li a {
@@ -292,7 +276,8 @@ h2 {
     margin-bottom: 87px;
 }
 
-.tab_slick div {
+.tab_slick div,
+.filter_tab > div {
     white-space: nowrap;
     line-height: 40px;
     font-weight: 800;
@@ -304,7 +289,8 @@ h2 {
     padding-left: 126px;
 }
 
-.tab_slick div img {
+.tab_slick div img,
+.filter_tab > div img {
     height: 40px;
     margin-right: 14px;
     float: left;
@@ -370,13 +356,12 @@ h2 {
 }
 
 
+
 /* popup-gallery */
 .popup-gallery {
     max-width: 1280px;
     margin: 0 auto;
     border: 1px solid rgba(31, 31, 31, 0.2);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 80px;
 }
 
@@ -401,35 +386,44 @@ h2 {
 
 
 /* illustrator */
-.scroll_area.ai ul li {
+.popup-gallery.ai {
+    display: flex;
+}
+
+.popup-gallery.ai li {
     width: 210px;
     padding: 48px 0 0 55px;
     border: 1px solid #eee;
 }
 
-.scroll_area.ai ul li a {
+.popup-gallery.ai li a {
     display: block;
     width: 100px;
     margin-bottom: 30px;
 }
 
-.scroll_area.ai ul li a img {
+.popup-gallery.ai li a img {
     width: 100%;
     object-fit: contain;
 }
 
 
 /* photoshop */
-.scroll_area.ps ul li {
+.popup-gallery.ps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.popup-gallery.ps li {
     width: 320px;
     padding: 48px 0 0 32px;
     border-left: 1px solid rgba(31, 31, 31, 0.3);
 }
 
-.scroll_area.ps ul li:nth-of-type(1) {
+.popup-gallery.ps li:nth-of-type(1) {
     border-left: none;
 }
-.scroll_area.ps ul li a {
+.popup-gallery.ps li a {
     display: block;
     width: 256px;
     margin-bottom: 50px;
@@ -465,4 +459,24 @@ h2 {
     right: 10% !important;
     background-image: url('../images/btn_arrow_next_white.png') !important;
 }
+
+/* figma */
+.scroll_area.fg,
+.noneScroll.fg {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.scroll_area.fg iframe,
+.noneScroll.fg iframe {
+    width: 600px;
+    height: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+
 

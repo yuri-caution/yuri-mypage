@@ -103,8 +103,17 @@ function showBanner() {
     bgArea.style.backgroundColor = bgcolor[idx]
 }
 
+
+function cards() {
+  idx++
+  topic.textContent = banners[idx].topic
+  title.textContent = banners[idx].title
+  notion.href = banners[idx].notion
+}
+
 function init() {
     showBanner()
+    cards()
 }
 
 init()

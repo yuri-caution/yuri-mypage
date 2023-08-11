@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="..//css/contents.css">
+    <script src="../js/code.jquery.com_jquery-1.12.4.js"></script>
+    <script src="../js/app.js"></script>
+    <title>Contents Design</title>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="wrap">
+        <h2>Contents Design</h2>
+        <ul class="cards">
+            <li class="card_01">
+                <img src="../images/contents/contents_sd01.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_02">
+                <img src="../images/contents/contents_sd02.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_03">
+                <img src="../images/contents/contents_sd03.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_04">
+                <img src="../images/contents/contents_sd04.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_05">
+                <img src="../images/contents/contents_sd05.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_06">
+                <img src="../images/contents/contents_sd05-2.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_07">
+                <img src="../images/contents/contents_sd06.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_08">
+                <img src="../images/contents/contents_sd07.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_09">
+                <img src="../images/contents/contents_sd08.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_10">
+                <img src="../images/contents/contents_sd09.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_11">
+                <img src="../images/contents/contents_sd10.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            <li class="card_12">
+                <img src="../images/contents/contents_sd11.png" alt="노션 썸네일">
+                <div>
+                    <p class="topic"></p>
+                    <a href="" class="notion">more</a>
+                </div>
+            </li>
+            
+        </ul>
+
+        <button class="load">LOAD MORE</button>
+    </div>
+    
+
+    <script>
+        $('.cards li').hover(function(){
+            $(this).find('div').css('transform', 'none')
+        }, function(){
+            $(this).find('div').css('transform', 'translateY(100%)')
+        })
+
+        $('.cards li').slice(0, 9).css('display', 'flex') //인덱스 앞에서 잘라옴
+        $('.load').on('click', function(){
+            // 숨은 것 중에 찾아내는 선택자 :hidden
+            $('.cards').find('li:hidden').slice(0, 9).css('display', 'flex')
+            if($('.cards').find('li:hidden').length <= 0){
+                $(this).hide()
+            }
+        })
+    </script>
+</body>
+</html>

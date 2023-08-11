@@ -12,136 +12,65 @@
     <script src="../js/code.jquery.com_jquery-1.12.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../js/app.js"></script>
     <title>Graphic Design</title>
+    <style>
+        .filter_tab > div {
+            cursor: pointer;
+            opacity: 0.3;
+        }
+        .filter_tab > div.active {
+            opacity: 1;
+        }
+        
+        .noneScroll,
+        .noneScroll.fg {
+            display: none;
+        }
+
+        .noneScroll.ai {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div class="header"></div>
     <section class="graphic">
         <h2>Graphic Design</h2>
-        <div class="tab_slick">
-            <div class="ai">
+        <div class="filter_tab">
+            <div data-id="Ai" class="ai active">
                 <img src="../images/Illustrator_black.png" alt="illustrator 로고">
                 <span>Illustrator</span>
             </div>
-            <div class="ps">
+            <div data-id="Ps" class="ps">
                 <img src="../images/Photoshop_black.png" alt="photoshop 로고">
                 <span>Photoshop</span> 
             </div>
-            <div class="fg">
+            <div data-id="Fg" class="fg">
                 <img src="../images/figma_black.png" alt="figma 로고">
                 <span>Figma</span> 
             </div>
         </div>
-        <div class="prevArrow"><img src="../images/btn_arrow_prev_black.png" alt="이전 버튼"></div>
-        <div class="nextArrow"><img src="../images/btn_arrow_next_black.png" alt="다음 버튼"></div>
         <div class="preview">
-            <div class="scroll_area ai">
-                <ul class="popup-gallery ai">
-                    <li class="col_01">
-                        <a href="../images/Illustrator/Untitled-1.png"><img src="../images/Illustrator/Untitled-1_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-2.png"><img src="../images/Illustrator/Untitled-2_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-3.png"><img src="../images/Illustrator/Untitled-3_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-4.png"><img src="../images/Illustrator/Untitled-4_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-5.png"><img src="../images/Illustrator/Untitled-5_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-6.png"><img src="../images/Illustrator/Untitled-6_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-7.png"><img src="../images/Illustrator/Untitled-7_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-8.png"><img src="../images/Illustrator/Untitled-8_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-9.png"><img src="../images/Illustrator/Untitled-9_s.png"></a>
-                    </li>
-                    <li  class="col_02">
-                        <a href="../images/Illustrator/Untitled-10.png"><img src="../images/Illustrator/Untitled-10_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-11.png"><img src="../images/Illustrator/Untitled-11_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-12.png"><img src="../images/Illustrator/Untitled-12_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-13.png"><img src="../images/Illustrator/Untitled-13_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-14.png"><img src="../images/Illustrator/Untitled-14_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-15.png"><img src="../images/Illustrator/Untitled-15_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-16.png"><img src="../images/Illustrator/Untitled-16_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-17.png"><img src="../images/Illustrator/Untitled-17_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-18.png"><img src="../images/Illustrator/Untitled-18_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-19.png"><img src="../images/Illustrator/Untitled-19_s.png"></a>
-                    </li>
-                    <li  class="col_03">
-                        <a href="../images/Illustrator/Untitled-20.png"><img src="../images/Illustrator/Untitled-20_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-21.png"><img src="../images/Illustrator/Untitled-21_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-22.png"><img src="../images/Illustrator/Untitled-22_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-23.png"><img src="../images/Illustrator/Untitled-23_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-24.png"><img src="../images/Illustrator/Untitled-24_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-25.png"><img src="../images/Illustrator/Untitled-25_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-26.png"><img src="../images/Illustrator/Untitled-26_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-27.png"><img src="../images/Illustrator/Untitled-27_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-28.png"><img src="../images/Illustrator/Untitled-28_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-29.png"><img src="../images/Illustrator/Untitled-29_s.png"></a>
-                    </li>
-                    <li  class="col_04">
-                        <a href="../images/Illustrator/Untitled-30.png"><img src="../images/Illustrator/Untitled-30_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-31.png"><img src="../images/Illustrator/Untitled-31_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-32.png"><img src="../images/Illustrator/Untitled-32_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-33.png"><img src="../images/Illustrator/Untitled-33_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-34.png"><img src="../images/Illustrator/Untitled-34_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-35.png"><img src="../images/Illustrator/Untitled-35_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-36.png"><img src="../images/Illustrator/Untitled-36_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-37.png"><img src="../images/Illustrator/Untitled-37_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-38.png"><img src="../images/Illustrator/Untitled-38_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-39.png"><img src="../images/Illustrator/Untitled-39_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-40.png"><img src="../images/Illustrator/Untitled-40_s.png"></a>
-                    </li>
-                    <li  class="col_05">
-                        <a href="../images/Illustrator/Untitled-41.png"><img src="../images/Illustrator/Untitled-41_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-42.png"><img src="../images/Illustrator/Untitled-42_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-43.png"><img src="../images/Illustrator/Untitled-43_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-44.png"><img src="../images/Illustrator/Untitled-44_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-45.png"><img src="../images/Illustrator/Untitled-45_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-46.png"><img src="../images/Illustrator/Untitled-46_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-47.png"><img src="../images/Illustrator/Untitled-47_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-48.png"><img src="../images/Illustrator/Untitled-48_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-49.png"><img src="../images/Illustrator/Untitled-49_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-50.png"><img src="../images/Illustrator/Untitled-50_s.png"></a>
-                    </li>
-                    <li  class="col_06">
-                        <a href="../images/Illustrator/Untitled-51.png"><img src="../images/Illustrator/Untitled-51_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-52.png"><img src="../images/Illustrator/Untitled-52_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-53.png"><img src="../images/Illustrator/Untitled-53_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-54.png"><img src="../images/Illustrator/Untitled-54_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-55.png"><img src="../images/Illustrator/Untitled-55_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-56.png"><img src="../images/Illustrator/Untitled-56_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-57.png"><img src="../images/Illustrator/Untitled-57_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-58.png"><img src="../images/Illustrator/Untitled-58_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-59.png"><img src="../images/Illustrator/Untitled-59_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-60.png"><img src="../images/Illustrator/Untitled-60_s.png"></a>
-                        <a href="../images/Illustrator/Untitled-61.png"><img src="../images/Illustrator/Untitled-61_s.png"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="scroll_area ps">
-                <ul class="popup-gallery ps">
-                    <li class="col_01">
-                        <a href="../images/photoshop/banner_01.jpg"><img src="../images/photoshop/banner_01_thum.jpg" alt="배너 이미지1"></a>
-                        <a href="../images/photoshop/banner_L_03.jpg"><img src="../images/photoshop/banner_L_03_thum.jpg" alt="긴 배너3"></a>
-                    </li>
-                    <li  class="col_02">
-                        <a href="../images/photoshop/banner_05.jpg"><img src="../images/photoshop/banner_03_thum.jpg" alt="배너 이미지3"></a>
-                        <a href="../images/photoshop/banner_06.jpg"><img src="../images/photoshop/banner_04_thum.jpg" alt="배너 이미지4"></a>
-                        <a href="../images/photoshop/banner_L_01.jpg"><img src="../images/photoshop/banner_L_01_thum.jpg" alt="긴 배너1"></a>
-                    </li>
-                    <li  class="col_03">
-                        <a href="../images/photoshop/banner_slide_01.jpg"><img src="../images/photoshop/banner_slide_01_thum.jpg" alt="슬라이드"></a>
-                        <a href="../images/photoshop/banner_02.jpg"><img src="../images/photoshop/banner_02_thum.jpg" alt="배너 이미지2"></a>
-                        <a href="../images/photoshop/banner_03.jpg"><img src="../images/photoshop/banner_05_thum.jpg" alt="배너 이미지5"></a>
-                        <a href="../images/photoshop/banner_04.jpg"><img src="../images/photoshop/banner_06_thum.jpg" alt="배너 이미지6"></a>
-                    </li>
-                    <li  class="col_04">
-                        <a href="../images/photoshop/banner_L_02.jpg"><img src="../images/photoshop/banner_L_02_thum.jpg" alt="긴 배너2"></a>
-                        <a href="../images/photoshop/info design.jpeg"><img src="../images/photoshop/info-design_thum.jpg" alt="인포 디자인"></a>
-                        <a href="../images/photoshop/poster_redesign.jpeg"><img src="../images/photoshop/poster_redesign_thum.jpg" alt="포스터 리디자인"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="scroll_area fg">
-                
-            </div>
+            <div class="noneScroll ai" data-item="Ai"></div>
+            <div class="noneScroll ps" data-item="Ps"></div>
+            <div class="noneScroll fg" data-item="Fg"></div>
         </div>
     </section>
+
+    <script>
+        $('.header').load('../inc/header.html')
+        $('.noneScroll.ai').load('../inc/ai.html')
+        $('.noneScroll.ps').load('../inc/ps.html')
+        $('.noneScroll.fg').load('../inc/fg.html')
+
+        $('.filter_tab > div').on('click', function(e){
+            $('.filter_tab > div').removeClass('active')
+            $(this).addClass('active')
+            // data-id = dataset.id
+            var category = e.currentTarget.dataset.id
+            $('.preview > div').hide().filter(`[data-item = ${category}]`).show()
+        })
+    </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 $(function(){
     $('.header').load('../inc/header.html')
+ 
 
     // resize, reload
     // var resizeTimer;
@@ -80,6 +81,7 @@ $(function(){
         initialSlide: 1,
         prevArrow : $('.prevArrow'), 
         nextArrow : $('.nextArrow'),
+        draggable:false
     })
 
     $('.prevArrow').click(function(){
@@ -172,6 +174,9 @@ $(function(){
     });
         
 
+    $('.scroll_area.ai').load('../inc/ai.html')
+    $('.scroll_area.ps').load('../inc/ps.html')
+    $('.scroll_area.fg').load('../inc/fg.html')
 
 
 })

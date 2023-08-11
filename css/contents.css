@@ -1,0 +1,62 @@
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 54px;
+    margin-bottom: 150px;
+}
+
+.cards li {
+    position: relative;
+    width: 390px;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+    margin-bottom: 40px;
+}
+
+.cards li div {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 390px;
+    transform: translateY(100%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px 26px 40px;
+    border-top: 2px solid #0EB5BF;
+    transition: all 0.5s;
+}
+
+.cards li img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top 0 right 10px;
+    transition: all 0.3s;
+}
+
+.cards li p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0 25px;
+}
+
+.cards li div a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #bbbbbb;
+    position: relative;
+}
+
+.cards li div a::after {
+    content: url('../images/ico_hotnew_more.png');
+    position: absolute;
+    top: 0;
+    right: -21px;
+    width: 5px;
+    height: 6px;
+}
