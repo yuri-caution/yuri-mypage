@@ -8,6 +8,14 @@
 /* font-family: 'PyeongChangPeace'; */
 /* 300 700 */
 @import url('https://webfontworld.github.io/PyeongChang/PyeongChangPeace.css');
+/* font-family: 'TTWanjunuricheR'; */
+@font-face {
+    font-family: 'TTWanjunuricheR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/TTWanjunuricheR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -172,6 +180,7 @@ header .logo img {
     border-bottom: 2px solid #0EB5BF;
     border-right: 2px solid #0EB5BF;
     transform: translateY(-70%) rotate(45deg);
+    cursor: pointer;
 }
 
 .gnb > li.on:nth-of-type(1)::after {

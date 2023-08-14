@@ -13,7 +13,7 @@ $(function(){
     // }
 
     
-    //section contents
+    //section uiux
     $('.filter_tab button').on('click', function(e){
         $('.filter_tab button').removeClass('active')
         $(this).addClass('active')

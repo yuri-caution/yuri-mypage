@@ -469,6 +469,10 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.scroll_area.fg {
+    display: none;
+}
+
 .scroll_area.fg iframe,
 .noneScroll.fg iframe {
     width: 600px;
