@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
-    <!-- slick 불러오기 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="../js/code.jquery.com_jquery-1.12.4.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="../js/app.js"></script>
     <title>Graphic Design</title>
@@ -54,16 +50,16 @@
         <div class="preview">
             <div class="noneScroll ai" data-item="Ai"></div>
             <div class="noneScroll ps" data-item="Ps"></div>
-            <div class="noneScroll fg" data-item="Fg"></div>
+            <div class="noneScroll fg" data-item="Fg"><fg/div>
         </div>
     </section>
 
     <script>
-        $('.header').load('../inc/header.html')
         $('.noneScroll.ai').load('../inc/ai.html')
         $('.noneScroll.ps').load('../inc/ps.html')
         $('.noneScroll.fg').load('../inc/fg.html')
-
+        
+        
         $('.filter_tab > div').on('click', function(e){
             $('.filter_tab > div').removeClass('active')
             $(this).addClass('active')
@@ -71,6 +67,8 @@
             var category = e.currentTarget.dataset.id
             $('.preview > div').hide().filter(`[data-item = ${category}]`).show()
         })
+        
+        
     </script>
 </body>
 </html>

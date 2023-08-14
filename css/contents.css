@@ -28,7 +28,7 @@
     transform: translateY(100%);
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 30px 26px 40px;
+    padding: 30px 30px 20px;
     border-top: 2px solid #0EB5BF;
     transition: all 0.5s;
 }
@@ -40,23 +40,26 @@
     transition: all 0.3s;
 }
 
-.cards li p {
+.cards li p:nth-of-type(1) {
     font-size: 18px;
     line-height: 1.5;
-    margin: 15px 0 25px;
+    margin-bottom: 10px;
 }
 
 .cards li div a {
+    display: block;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #bbbbbb;
     position: relative;
+    margin-top: 24px;
+    text-align: right;
 }
 
 .cards li div a::after {
     content: url('../images/ico_hotnew_more.png');
     position: absolute;
     top: 0;
-    right: -21px;
+    right: -3%;
     width: 5px;
     height: 6px;
 }

@@ -218,3 +218,20 @@ header .logo img {
 
 
 
+.mfp-arrow {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.mfp-arrow::after, .mfp-arrow::before {
+    display: none !important;
+}
+
+.mfp-arrow-left {
+    left: 10% !important;
+    background-image: url('../images/btn_arrow_prev_white.png') !important;
+    
+}
+
+
+

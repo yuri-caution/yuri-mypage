@@ -1,6 +1,6 @@
 .wrap {
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 1020px;
+    margin: 0 auto 180px;
 }
 
 h3 {
@@ -23,20 +23,46 @@ h3 {
 }
 
 .photos {
-    width: 100%;
+    max-width: 1020px;
+    margin: 50px auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    gap: 60px;
+}
+
+.photos img {
+    width: 350px;
+    height: 550px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.photos img:nth-of-type(1) {
+    width: 800px;
 }
 
 .box {
     width: 100%;
-    padding: 30px 0 0 30px;
+    padding: 30px;
     background-color: #eee;
     margin-bottom: 20px;
+    display: flex;
+    align-items: start;
+    gap: 40px;
 }
 
 .box h4 {
     font-size: 18px;
     font-weight: 700;
+}
+
+.box ul {
+    list-style: initial;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }

@@ -72,6 +72,8 @@ $(function(){
         easing: 'ease-in-out',
         delay: 300
     });
+    
+
 
 
     // section graphic
@@ -108,36 +110,7 @@ $(function(){
         }
     })
 
-    $('.popup-gallery.ai').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-        }
-    });
-
-    $('.popup-gallery.ps').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-        }
-    });
-
+    
     ScrollReveal().reveal('.graphic h2', {
         distance: '50px',
         origin: 'bottom',
@@ -174,9 +147,6 @@ $(function(){
     });
         
 
-    $('.scroll_area.ai').load('../inc/ai.html')
-    $('.scroll_area.ps').load('../inc/ps.html')
-    $('.scroll_area.fg').load('../inc/fg.html')
 
 
 })
