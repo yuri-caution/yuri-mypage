@@ -1,79 +1,119 @@
-const bgcolor = ['#207844', '#e04948', '#5D540B', '#6a5acd', '#184A4D', '#ff9933', '#001a33', '#220066', '#ffbf80', '#80d4ff', '#cc6699', '#1a000d']
-
 const banners = [
-    {
-        id: 1,
-        topic: '고전 문학 현재화 콘텐츠 기획',
-        title: '카페X고전문학 콜라보',
-        notion: 'https://lake-ferry-0aa.notion.site/X-dedba7f4f9174e0bb86a92135e1f7cd5?pvs=4'
-      },
-    {
-        id: 2,
-        topic: '국가·공공브랜드 활성화 기획안',
-        title: 'Colorful KOREA',
-        notion: 'https://lake-ferry-0aa.notion.site/Colorful-KOREA-c6c621ece3094cc899b1622da3e7f219?pvs=4'
-      },
-    {
-        id: 3,
-        topic: '한국어/한국문화교재 단원 기획',
-        title: '떡국과 송편을 먹어본 적이 있나요?',
-        notion: 'https://lake-ferry-0aa.notion.site/98c970e17dd34a0a8c9f23e5e11a26c1?pvs=4'
-      },
-    {
-        id: 4,
-        topic: '출판편집자_출간기획안',
-        title: '마법의 소라고동',
-        notion: 'https://lake-ferry-0aa.notion.site/_-e387f13b8aeb459993e4094ddbf1a818?pvs=4'
-      },
-    {
-        id: 5,
-        topic: 'VR컨텐츠 기획',
-        title: '죽음은 얼마인가요?',
-        notion: 'https://lake-ferry-0aa.notion.site/cc38a13783a944bc8173d3c0a070b85c?pvs=4'
-      },
-    {
-        id: 6,
-        topic: '게임 기획안',
-        title: '“지금, 나들이”/“Bon voyage!”',
-        notion: 'https://lake-ferry-0aa.notion.site/Bon-voyage-ac86ae85719f4980aaf148f2d9844b4d?pvs=4'
-      },
-    {
-        id: 7,
-        topic: 'Project information design',
-        title: 'Design: They began with a Dream',
-        notion: 'https://lake-ferry-0aa.notion.site/Design-Project-I-8ac4d6898979411e9774622b591b8e64?pvs=4'
-      },
-    {
-        id: 8,
-        topic: 'Movie Poster redesign',
-        title: '뮤지컬 엘리자벳',
-        notion: 'https://lake-ferry-0aa.notion.site/Design-Project-P-f2820938d12e4f95a0f8eae319a473f8?pvs=4'
-      },
-    {
-        id: 9,
-        topic: '미디어 콘텐츠 기획 및 제작',
-        title: '소리로 만나는 고양이',
-        notion: 'https://lake-ferry-0aa.notion.site/87911cfd327046a8ae6249c8951c9ab0?pvs=4'
-      },
-    {
-        id: 10,
-        topic: '게임 기획 및 활용방안',
-        title: '머피의 해마',
-        notion: 'https://lake-ferry-0aa.notion.site/0014d69e640d4266b42537bb4c853204?pvs=4'
-      },
-    {
-        id: 11,
-        topic: '미래의 UI/UX 디자인',
-        title: '육아데이터베이스 “나란히”',
-        notion: 'https://lake-ferry-0aa.notion.site/UI-Design-Project-F-7cca02bedf4540209f4694169ef0897c?pvs=4'
-      },
-    {
-        id: 12,
-        topic: '게임 기획',
-        title: '메멘토모리',
-        notion: 'https://lake-ferry-0aa.notion.site/8c5c5268866b49e79cd4305df20ffd19?pvs=4'
-      },
+  
+  {
+    "id": 1,
+    "topic": "고전 문학 현재화 콘텐츠 기획",
+    "title": "카페X고전문학 콜라보",
+    "img": "../images/contents/contents_sd01.png",
+    "summary": "카페X고전문학 콜라보 카페",
+    "desc": "고전 문학을 현재로 가져오는 콘텐츠 기획",
+    "notion": "https://lake-ferry-0aa.notion.site/X-dedba7f4f9174e0bb86a92135e1f7cd5?pvs=4"
+    },
+  {
+    "id": 2,
+    "topic": "국가·공공브랜드 활성화 기획안",
+    "title": "Colorful KOREA",
+    "img": "../images/contents/contents_sd02.png",
+    "summary": "랜드마크에서 랜드마크로",
+    "desc": "국가브랜드 활성화를 위한 브랜딩 전략",
+    "notion": "https://lake-ferry-0aa.notion.site/Colorful-KOREA-c6c621ece3094cc899b1622da3e7f219?pvs=4"
+    },
+  {
+    "id": 3,
+    "topic": "한국어/한국문화교재 단원 기획",
+    "title": "떡국과 송편을 먹어본 적이 있나요?",
+    "img": "../images/contents/contents_sd03.png",
+    "summary": "한국어/한국문화교재 단원 기획",
+    "desc": "음식이 들어가는 속담을 활용",
+    "notion": "https://lake-ferry-0aa.notion.site/98c970e17dd34a0a8c9f23e5e11a26c1?pvs=4"
+    },
+  {
+    "id": 4,
+    "topic": "출판편집자_출간기획안",
+    "title": "마법의 소라고동",
+    "img": "../images/contents/contents_sd04.png",
+    "summary": "책 출간 기획안",
+    "desc": "코멘토 직무부트캠프 <출판편집자> 수료 과정",
+    "notion": "https://lake-ferry-0aa.notion.site/_-e387f13b8aeb459993e4094ddbf1a818?pvs=4"
+    },
+  {
+    "id": 5,
+    "topic": "VR컨텐츠 기획",
+    "title": "죽음은 얼마인가요?",
+    "img": "../images/contents/contents_sd05.png",
+    "summary": "VR컨텐츠 기획",
+    "desc": "<죽은 자의 집 청소>(김완 작)를 VR 다큐멘터리로 구성",
+    "notion": "https://lake-ferry-0aa.notion.site/cc38a13783a944bc8173d3c0a070b85c?pvs=4"
+    },
+  {
+    "id": 6,
+    "topic": "게임 기획안",
+    "title": "“지금, 나들이”/“Bon voyage!”",
+    "img": "../images/contents/contents_sd05-2.png",
+    "summary": "게임 기획",
+    "desc": "국가브랜딩 전략 'Colorful KOREA'를 게임으로",
+    "notion": "https://lake-ferry-0aa.notion.site/Bon-voyage-ac86ae85719f4980aaf148f2d9844b4d?pvs=4"
+    },
+  {
+    "id": 7,
+    "topic": "Project information design",
+    "title": "Design: They began with a Dream",
+    "img": "../images/contents/contents_sd06.png",
+    "summary": "인포그래픽",
+    "desc": "디자인에 관한 TED 영상 내용을 인포그래픽으로 요약",
+    "notion": "https://lake-ferry-0aa.notion.site/Design-Project-I-8ac4d6898979411e9774622b591b8e64?pvs=4"
+    },
+  {
+    "id": 8,
+    "topic": "Movie Poster redesign",
+    "title": "뮤지컬 엘리자벳",
+    "img": "../images/contents/contents_sd07.png",
+    "summary": "포스터 리디자인",
+    "desc": "'뮤지컬 엘리자벳' 포스터를 새롭게 디자인",
+    "notion": "https://lake-ferry-0aa.notion.site/Design-Project-P-f2820938d12e4f95a0f8eae319a473f8?pvs=4"
+    },
+  {
+    "id": 9,
+    "topic": "미디어 콘텐츠 기획 및 제작",
+    "title": "소리로 만나는 고양이",
+    "img": "../images/contents/contents_sd08.png",
+    "summary": "미디어 콘텐츠 기획 및 제작",
+    "desc": "시각장애인을 위한 고양이 다큐멘터리 오디오 콘텐츠",
+    "notion": "https://lake-ferry-0aa.notion.site/87911cfd327046a8ae6249c8951c9ab0?pvs=4"
+    },
+  {
+    "id": 10,
+    "topic": "게임 기획 및 활용방안",
+    "title": "머피의 해마",
+    "img": "../images/contents/contents_sd09.png",
+    "summary": "게임 기획 및 활용방안",
+    "desc": "'오늘의 힘든 일은 잊어버리자'는 메시지를 전하는 게임",
+    "notion": "https://lake-ferry-0aa.notion.site/0014d69e640d4266b42537bb4c853204?pvs=4"
+    },
+  {
+    "id": 11,
+    "topic": "미래의 UI/UX 디자인",
+    "title": "육아데이터베이스 “나란히”",
+    "img": "../images/contents/contents_sd10.png",
+    "summary": "미래의 UI/UX 디자인",
+    "desc": "향후 10년 이내의 미래에 필요한 UX를 예측하여 디자인",
+    "notion": "https://lake-ferry-0aa.notion.site/UI-Design-Project-F-7cca02bedf4540209f4694169ef0897c?pvs=4"
+    },
+  {
+    "id": 12,
+    "topic": "게임 기획",
+    "title": "메멘토모리",
+    "img": "../images/contents/contents_sd11.png",
+    "summary": "게임 기획",
+    "desc": "VR다큐멘터리 <죽음은 얼마인가요?>를 VR게임으로",
+    "notion": "https://lake-ferry-0aa.notion.site/8c5c5268866b49e79cd4305df20ffd19?pvs=4"
+    }
 ]
+
+// const banners = require('../db/data.json'); 
+// console.log(banners);
+
+const bgcolor = ['#207844', '#e04948', '#5D540B', '#6a5acd', '#184A4D', '#ff9933', '#001a33', '#220066', '#ffbf80', '#80d4ff', '#cc6699', '#1a000d']
 
 const topic = document.getElementById('topic')
 const title = document.getElementById('title')
@@ -103,11 +143,16 @@ function showBanner() {
     bgArea.style.backgroundColor = bgcolor[idx]
 }
 
-
-
+function showList() {
+    topic.textContent = banners[idx].topic
+    title.textContent = banners[idx].title
+    notion.href = banners[idx].notion
+    bgArea.style.backgroundColor = bgcolor[idx]
+}
 
 function init() {
     showBanner()
 }
 
 init()
+

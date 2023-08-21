@@ -42,8 +42,10 @@
 }
 
 .brands {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
 }
 
 .brands li a {
@@ -51,6 +53,7 @@
     height: 320px;
     display: flex;
     align-items: center;
+    box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.6);
 }
 
 .brands li .logo {
